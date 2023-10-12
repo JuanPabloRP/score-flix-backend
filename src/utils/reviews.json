@@ -1,0 +1,122 @@
+[
+	{
+		"dislikes": 200,
+		"duration": 142,
+		"genres": ["Drama"],
+		"id": "1",
+		"likes": 5000,
+		"score": 9.3,
+		"title": "The Shawshank Redemption",
+		"userId": "user123",
+		"year": "1994-02-15",
+		"poster": "https://lumiere-a.akamaihd.net/v1/images/image_67215a3e.jpeg?region=0,0,540,810"
+	},
+	{
+		"dislikes": 150,
+		"duration": 175,
+		"genres": ["Crimen", "Drama"],
+		"id": "2",
+		"likes": 4500,
+		"score": 9.2,
+		"title": "The Godfather",
+		"userId": "user456",
+		"year": "1972-02-15",
+		"poster": "https://lumiere-a.akamaihd.net/v1/images/image_67215a3e.jpeg?region=0,0,540,810"
+	},
+	{
+		"dislikes": 180,
+		"duration": 152,
+		"genres": ["Acción", "Crimen", "Drama"],
+		"id": "3",
+		"likes": 4800,
+		"score": 9,
+		"title": "The Dark Knight",
+		"userId": "user789",
+		"year": "2008-02-15",
+		"poster": "https://lumiere-a.akamaihd.net/v1/images/image_67215a3e.jpeg?region=0,0,540,810"
+	},
+	{
+		"dislikes": 220,
+		"duration": 195,
+		"genres": ["Comedia", "Drama", "Historia"],
+		"id": "4",
+		"likes": 4200,
+		"score": 8.9,
+		"title": "Schindler's List",
+		"userId": "user123",
+		"year": "1993-02-15",
+		"poster": "https://lumiere-a.akamaihd.net/v1/images/image_67215a3e.jpeg?region=0,0,540,810"
+	},
+	{
+		"dislikes": 210,
+		"duration": 154,
+		"genres": ["Crimen", "Drama"],
+		"id": "5",
+		"likes": 4300,
+		"score": 8.9,
+		"title": "Pulp Fiction",
+		"userId": "user456",
+		"year": "1994-02-15",
+		"poster": "https://lumiere-a.akamaihd.net/v1/images/image_67215a3e.jpeg?region=0,0,540,810"
+	},
+	{
+		"dislikes": 190,
+		"duration": 201,
+		"genres": ["Acción", "Aventura", "Drama"],
+		"id": "6",
+		"likes": 4400,
+		"score": 8.9,
+		"title": "The Lord of the Rings: The Return of the King",
+		"userId": "user789",
+		"year": "2003-02-15",
+		"poster": "https://lumiere-a.akamaihd.net/v1/images/image_67215a3e.jpeg?region=0,0,540,810"
+	},
+	{
+		"dislikes": 160,
+		"duration": 139,
+		"genres": ["Drama"],
+		"id": "7",
+		"likes": 4700,
+		"score": 8.8,
+		"title": "Fight Club",
+		"userId": "user123",
+		"year": "1999-02-15",
+		"poster": "https://lumiere-a.akamaihd.net/v1/images/image_67215a3e.jpeg?region=0,0,540,810"
+	},
+	{
+		"dislikes": 170,
+		"duration": 142,
+		"genres": ["Drama", "Romance"],
+		"id": "8",
+		"likes": 4600,
+		"score": 8.8,
+		"title": "Forrest Gump",
+		"userId": "user456",
+		"year": "1994-02-15",
+		"poster": "https://lumiere-a.akamaihd.net/v1/images/image_67215a3e.jpeg?region=0,0,540,810"
+	},
+	{
+		"dislikes": 180,
+		"duration": 148,
+		"genres": ["Acción", "Aventura", " Ciencia ficción"],
+		"id": "9",
+		"likes": 4900,
+		"score": 8.7,
+		"title": "Inception",
+		"userId": "user789",
+		"year": "2010-02-15",
+		"poster": "https://lumiere-a.akamaihd.net/v1/images/image_67215a3e.jpeg?region=0,0,540,810"
+	},
+	{
+		"dislikes": 190,
+		"duration": 136,
+		"genres": ["Acción", " Ciencia ficción"],
+		"id": "10",
+		"likes": 4800,
+		"score": 8.7,
+		"title": "The Matrix",
+		"userId": "user123",
+		"year": "1999-02-15",
+		"poster": "https://lumiere-a.akamaihd.net/v1/images/image_67215a3e.jpeg?region=0,0,540,810"
+	}
+]

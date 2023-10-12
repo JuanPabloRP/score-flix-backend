@@ -1,0 +1,2 @@
+### Recuperar todas las reviews
+GET http://localhost:3000/reviews

@@ -1,0 +1,32 @@
+# Dependencias
+node_modules/
+
+# Archivos de configuración
+.env
+.env.local
+.env.*.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Archivos de build
+build/
+dist/
+out/
+*.log
+*.swp
+
+# Dependencias de package-lock.json
+package-lock.json
+
+# Dependencias de yarn.lock
+yarn.lock
+
+# Archivos de caché
+.npm
+.pnp
+.pnp.js
+
+# Otros archivos
+.DS_Store
+Thumbs.db
