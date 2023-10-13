@@ -16,13 +16,13 @@ const reviewSchema = z.object({
 			'Aventura',
 			'Romance',
 			'Comedia',
-      'Terror',
-      "Fantasía",
-      "Misterio",
+			'Terror',
+			'Fantasía',
+			'Misterio',
 			'Otro',
 		])
 	),
-	date: z.date(),
+	date: z.string(),
 	duration: z.number().int().positive(),
 	rate: z.number().min(0).max(10),
 	poster: z.string().url({
@@ -33,12 +33,12 @@ const reviewSchema = z.object({
 	dislikes: z.number().int().positive(),
 });
 
-export function validateSchema(obj:object){
-  return reviewSchema.safeParse(obj);
+export function validateSchema(obj) {
+	return reviewSchema.safeParse(obj);
 }
 
-export function validatePartialSchema(obj:object){
-  return reviewSchema.partial().safeParse(obj);
+export function validatePartialSchema(obj) {
+	return reviewSchema.partial().safeParse(obj);
 }
 
 /*
@@ -49,7 +49,7 @@ duration
 director
 rate
 poster
-year
+date
 likes
 dislikes
 userId

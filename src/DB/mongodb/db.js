@@ -21,9 +21,8 @@ async function connectDB() {
 		console.error(error);
 
 		await client.close();
+		throw error;
 	}
 }
-connectDB();
-
 
 export { connectDB };
