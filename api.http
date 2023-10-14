@@ -21,25 +21,12 @@ Content-Type: application/json
 }
 
 ### Actualizar una review
-PATCH http://localhost:3000/reviews/6529b0544ee5f51e4e1624e4
+PATCH http://localhost:3000/reviews/6529e8030afe47eb19765df6
 Content-Type: application/json
 
 {
     "title": "The Godfather",
-    "rate": 1,
-    "duration": 175,
-    "genres": [
-        "Drama",
-        "Crimen"
-    ],
-    "poster": "https://www.imdb.com/title/tt0068646/mediaviewer/rm1469564160/",
-    "date": "1972-03-24",
-    "genre": [
-        "Drama",
-        "Acción"
-    ],
-    "likes": 0,
-    "dislikes": 0
+    "rate": "1"
 }
 
 ### Eliminar una review
