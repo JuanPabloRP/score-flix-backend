@@ -1,6 +1,8 @@
 import express, { json } from 'express';
 import { createReviewRouter } from './routes/reviews.js';
 import { corsMiddleware } from './middlewares/cors.js';
+import dotenv from 'dotenv';
+dotenv.config();
 
 export const createApp = ({ reviewModel }) => {
 	const app = express();
