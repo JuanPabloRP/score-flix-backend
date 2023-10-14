@@ -2,7 +2,7 @@
 	"name": "score-flix-backend",
 	"version": "1.0.0",
 	"description": "",
-	"main": "src/app.js",
+	"main": "server-with-mongodb.js",
 	"type": "module",
 	"scripts": {
 		"start": "node server-with-mongodb.js",
