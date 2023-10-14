@@ -5,7 +5,7 @@
 	"main": "src/app.js",
 	"type": "module",
 	"scripts": {
-		"start:mongodb": "node server-with-mongodb.js",
+		"start": "node server-with-mongodb.js",
 		"dev": "nodemon server-with-mongodb.js",
 		"build":"",
 		"test": "echo \"Error: no test specified\" && exit 1"
