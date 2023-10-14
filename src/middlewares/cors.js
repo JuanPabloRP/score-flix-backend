@@ -2,8 +2,8 @@ import cors from 'cors';
 
 const ACCEPTED_ORIGINS = [
 	'http://localhost:5173',
-	'https://karratha-redback-hnae.1.us-1.fl0.io/',
-	'https://score-flix.vercel.app/',
+	'https://karratha-redback-hnae.1.us-1.fl0.io',
+	'https://score-flix.vercel.app',
 ];
 
 export const corsMiddleware = ({ accepted_origins = ACCEPTED_ORIGINS } = {}) =>
