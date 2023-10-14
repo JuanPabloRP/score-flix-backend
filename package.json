@@ -6,7 +6,7 @@
 	"type": "module",
 	"scripts": {
 		"start:mongodb": "node server-with-mongodb.js",
-		"build": "pnpm run build",
+		"build": "npm run build",
 		"dev": "nodemon server-with-mongodb.js",
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
