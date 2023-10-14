@@ -5,8 +5,8 @@
 	"main": "src/app.js",
 	"type": "module",
 	"scripts": {
-		"start:mongodb": "node --watch server-with-mongodb.js",
-		"build": "",
+		"start:mongodb": "node server-with-mongodb.js",
+		"build": "pnpm run build",
 		"dev": "nodemon server-with-mongodb.js",
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},

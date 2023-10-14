@@ -2,22 +2,22 @@
 GET http://localhost:3000/reviews
 
 ### Recuperar una review
-GET http://localhost:3000/reviews/6529b0544ee5f51e4e1624e4
+GET http://localhost:3000/reviews/6529dd140afe47eb19765df3
 
 ### Crear una review
 POST http://localhost:3000/reviews
 Content-Type: application/json
 
 {
-  "title": "The Godfather",
-  "genre": ["Drama", "Crimen"],
-  "date": "1972-03-24",
-  "duration": 175,
-  "rate": 9.2,
-  "poster": "https://www.imdb.com/title/tt0068646/mediaviewer/rm1469564160/",
-  "director": "Francis Ford Coppola",
-  "likes": 2000,
-  "dislikes": 600
+  "date": "2023-10-28",
+  "dislikes": 0,
+  "duration": "132",
+  "genre": ["Drama", "Acción"],
+  "likes": 0,
+  "poster": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAA",
+  "rate": "3.2",
+  "title": "hola",
+  "director": "Francis Ford Coppola"
 }
 
 ### Actualizar una review
@@ -25,7 +25,21 @@ PATCH http://localhost:3000/reviews/6529b0544ee5f51e4e1624e4
 Content-Type: application/json
 
 {
-  "likes": 1750
+    "title": "The Godfather",
+    "rate": 1,
+    "duration": 175,
+    "genres": [
+        "Drama",
+        "Crimen"
+    ],
+    "poster": "https://www.imdb.com/title/tt0068646/mediaviewer/rm1469564160/",
+    "date": "1972-03-24",
+    "genre": [
+        "Drama",
+        "Acción"
+    ],
+    "likes": 0,
+    "dislikes": 0
 }
 
 ### Eliminar una review

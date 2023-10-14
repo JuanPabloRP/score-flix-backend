@@ -1,5 +1,12 @@
 import z from 'zod';
 
+const stringToNumberSchema = z
+	.string()
+	.refine((str) => !isNaN(parseFloat(str)), {
+		message: 'La duración debe ser un número válido.',
+	})
+	.transform((str) => parseFloat(str));
+
 const reviewSchema = z.object({
 	title: z.string({
 		invalid_type_error: 'Review title must be a string',
@@ -23,14 +30,23 @@ const reviewSchema = z.object({
 		])
 	),
 	date: z.string(),
-	duration: z.number().int().positive(),
-	rate: z.number().min(0).max(10),
+	duration: z
+		.string()
+		.refine((str) => !isNaN(parseFloat(str)), {
+			message: 'La duración debe ser un número válido.',
+		})
+		.transform((str) => parseFloat(str)),
+	rate: z
+		.string()
+		.refine((str) => !isNaN(parseFloat(str)), {
+			message: 'La duración debe ser un número válido.',
+		})
+		.transform((str) => parseFloat(str)),
 	poster: z.string().url({
 		message: 'Poster must be a valid url',
 	}),
-	director: z.string(),
-	likes: z.number().int().positive(),
-	dislikes: z.number().int().positive(),
+	likes: z.number().int().min(0),
+	dislikes: z.number().int().min(0)
 });
 
 export function validateSchema(obj) {

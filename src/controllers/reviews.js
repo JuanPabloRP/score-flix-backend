@@ -48,7 +48,19 @@ export class ReviewsController {
 	};
 
 	delete = async (req, res) => {
-		const { id } = req.params;
+		let { id } = req.params;
+
+		const result = await this.reviewModel.delete({ id });
+
+		if (result === false) {
+			return res.status(400).json({ error: JSON.parse(result.error.message) });
+		}
+
+		return res.json({ message: 'Review deleted' });
+	};
+
+	delete = async (req, res) => {
+		let { id } = req.body;
 
 		const result = await this.reviewModel.delete({ id });
 
