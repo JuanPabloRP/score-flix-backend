@@ -13,11 +13,11 @@ const client = new MongoClient(uri, {
 	},
 });
 
-async function connectDB() {
+async function connectDB({collectionName}) {
 	try {
 		await client.connect();
 		const database = client.db('score-flix');
-		return database.collection('reviews');
+		return database.collection(collectionName);
 	} catch (error) {
 		console.error('Error connecting to the database');
 		console.error(error);

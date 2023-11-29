@@ -3,7 +3,7 @@ import { connectDB } from '../../DB/mongodb/db.js';
 
 export class ReviewModel {
 	static async getAll({ genre }) {
-		const db = await connectDB();
+		const db = await connectDB({ collectionName: 'reviews' });
 		if (genre) {
 			return db
 				.find({
@@ -21,14 +21,14 @@ export class ReviewModel {
 	}
 
 	static async getById({ id }) {
-		const db = await connectDB();
+		const db = await connectDB({ collectionName: 'reviews' });
 		const objectId = new ObjectId(id);
 
 		return db.findOne({ _id: objectId });
 	}
 
 	static async create({ input }) {
-		const db = await connectDB();
+		const db = await connectDB({ collectionName: 'reviews' });
 
 		const { insertedId } = await db.insertOne(input);
 
@@ -39,7 +39,7 @@ export class ReviewModel {
 	}
 
 	static async update({ id, input }) {
-		const db = await connectDB();
+		const db = await connectDB({ collectionName: 'reviews' });
 		const objectId = new ObjectId(id);
 
 		try {
@@ -64,7 +64,7 @@ export class ReviewModel {
 	}
 
 	static async delete({ id }) {
-		const db = await connectDB();
+		const db = await connectDB({ collectionName: 'reviews' });
 		const objectId = new ObjectId(id);
 
 		const { deletedCount } = await db.deleteOne({ _id: objectId });
