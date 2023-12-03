@@ -17,6 +17,12 @@ export class UserModel {
 		return db.findOne({ email: email });
 	}
 
+	static async getMe({ id }) {
+		const db = await connectDB({ collectionName: 'users' });
+
+		return db.findOne({ userId: id });
+	}
+
 	static async create({ input }) {
 		const db = await connectDB({ collectionName: 'users' });
 		const { insertedId } = await db.insertOne(input);
@@ -49,11 +55,11 @@ export class UserModel {
 		}
 	}
 
-	static async delete({ userId }) {
+	static async delete({ userId: id }) {
 		const db = await connectDB({ collectionName: 'users' });
 
-		const { deletedCount } = await db.deleteOne({ userId });
-		console.log(userId);
+		const { deletedCount } = await db.deleteOne({ id });
+		console.log(id);
 
 		return deletedCount > 0;
 	}

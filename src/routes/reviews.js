@@ -10,6 +10,7 @@ export const createReviewRouter = ({ reviewModel }) => {
 	reviewsRouter.post('/', reviewController.create);
 	reviewsRouter.delete('/', reviewController.delete);
 
+	reviewsRouter.get('/:userId', reviewController.getByUserId);
 	reviewsRouter.get('/:id', reviewController.getById);
 	reviewsRouter.delete('/:id', reviewController.delete);
 	reviewsRouter.patch('/:id', reviewController.update);

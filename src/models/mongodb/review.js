@@ -27,6 +27,12 @@ export class ReviewModel {
 		return db.findOne({ _id: objectId });
 	}
 
+	static async getByUserId({ userId }) {
+		const db = await connectDB({collectionName: "reviews"});
+		
+		return db.find({userId: userId}).toArray();
+	}
+
 	static async create({ input }) {
 		const db = await connectDB({ collectionName: 'reviews' });
 

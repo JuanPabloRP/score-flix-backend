@@ -16,11 +16,20 @@ export class ReviewsController {
 		const movie = await this.reviewModel.getById({ id });
 		if (movie) return res.json(movie);
 
-		res.status(404).json({ error: 'Review not found' });
+		return res.status(404).json({ error: 'Review not found' });
+	};
+
+	getByUserId = async (req, res) => {
+		const { userId } = req.params;
+		const reviews = await this.reviewModel.getByUserId({ userId });
+		if (reviews) {
+			return res.json(reviews);
+		}
+		return res.status(404).json({ error: 'No tienes reviews' });
 	};
 
 	create = async (req, res) => {
-		const result = validateSchema(req.body);
+		const result = validatePartialSchema(req.body);
 
 		if (!result.success) {
 			return res.status(400).json({ error: JSON.parse(result.error.message) });
